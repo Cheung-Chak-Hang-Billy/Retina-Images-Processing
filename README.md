@@ -10,7 +10,10 @@ This project focuses on the field of retina image processing, a crucial area in 
 
 Retina image processing involves the application of advanced computational techniques, including deep learning to extract meaningful information from retinal images. By analyzing these images, healthcare professionals can detect abnormalities, track disease progression, and make informed decisions for diagnosis and treatment.
 
-The goal of this project is to develop and showcase deep learning models and techniques for retinal image analysis. By leveraging state-of-the-art neural networks and image processing methodologies, we aim to enhance the accuracy and efficiency of diagnosing retinal diseases, such as diabetic retinopathy, age-related macular degeneration, and glaucoma.
+The goal of this project is to develop and showcase deep learning models and techniques for retinal image segmentation processing. By leveraging state-of-the-art neural networks and image processing methodologies, we aim to enhance the accuracy and efficiency of diagnosing retinal diseases, such as diabetic retinopathy, age-related macular degeneration, and glaucoma.
 
 ## Files
-```ewewwe```
+```Retina_Images_Processing.ipynb```: Juypyter Notebook containing all the code in preprocessing the retina images and building the model(HTML file: ```Retina_Images_Processing.html``` is also available)
+```retina_vessel_dataset.npz```: contains 610 raw retinal vessel images in 2D (64x64)
+- wewewew
+```sample_data.npz```: 
