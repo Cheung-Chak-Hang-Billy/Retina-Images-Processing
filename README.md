@@ -17,5 +17,5 @@ The goal of this project is to develop and showcase deep learning models and tec
 (HTML file: ```Retina_Images_Processing.html``` is also available)
 
 - ```retina_vessel_dataset.npz```: contains 610 raw retinal vessel images in 2D (64x64)
-- - wewewew
+  - wewewew
 - ```sample_data.npz```: 
