@@ -28,11 +28,13 @@ The goal of this project is to develop and showcase deep learning models and tec
   **y_test will not be available due to privacy issues** 
 
 - ```sample_data.npz```:
-  - **sample_img**: retinal vessel image for testing the dice coefficient, shape: (64, 64)
-  - **sample_label**: **sample_img** after passing the thershold (all the pixel values are 1 or 0), shape: (64, 64)
-  - **sample_pred_soft**: 
-  - **sample_pred_hard**:
-  - **sample_raw**: 
-  - **sample_enhanced**:
+  - **sample_img**: First retinal vessel image for testing, shape: (64, 64)
+  - **sample_label**: **sample_img** after passing the **ideal** thershold, shape: (64, 64)
+  - **sample_pred_soft**: blurred **sample_img**, shape: (64, 64)
+  - **sample_pred_hard**: **sample_img** after passing the **expected (real)** thershold, shape: (64, 64)
+  - **sample_raw**: Second retinal vessel image for testing, shape: (64, 64)
+  - **sample_enhanced**: **sample_raw** after contrast stretching, shape: (64, 64)
   
-  **Remarks: NPZ files is a compressed archive format used by NumPy to store arrays and other data.**
+  **Remark**
+  - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
+  -  After passing the thershold, all the pixel values are 1 or 0
