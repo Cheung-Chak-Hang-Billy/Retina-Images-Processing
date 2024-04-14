@@ -28,7 +28,9 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **y_train**: 537 labels for the training data, shape: (537, 64, 64)
   - **y_val**: 173 labels for the validation data, shape: (173, 64, 64)
   - **x_test**: 174 retinal vessel images for testing, shape: (174, 64, 64)
-  
+Below are some training samples and labels:
+![Retinal_vessel_Sample_Training](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/1c6c980b-6ba6-4f16-a004-15b7ab0a84f5)
+
   **y_test will not be available due to privacy issues** 
 
 - ```sample_data.npz```: contains 2 retinal vessel images for visualizing and testing
@@ -38,10 +40,6 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **sample_pred_hard**: **sample_img** after passing the **expected (real)** thershold, shape: (64, 64)
   - **sample_raw**: Second retinal vessel image for testing, shape: (64, 64)
   - **sample_enhanced**: **sample_raw** after contrast stretching, shape: (64, 64)
-
-Below are some sample images:
-![Retinal_Vessel_Samples](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/ac2b4531-c2c9-42ec-8a6c-8ca3605de841)
- 
   **Remark**
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
