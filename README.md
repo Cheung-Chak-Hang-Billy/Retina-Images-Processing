@@ -38,12 +38,14 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **sample_pred_hard**: **sample_img** after passing the **expected (real)** thershold, shape: (64, 64)
   - **sample_raw**: Second retinal vessel image for testing, shape: (64, 64)
   - **sample_enhanced**: **sample_raw** after contrast stretching, shape: (64, 64)
-  
+ Below are some sample images:
+![Retinal_Vessel_Samples](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/ac2b4531-c2c9-42ec-8a6c-8ca3605de841)
+ 
   **Remark**
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
 
- ## Model
+## Model
  The model is autoencoder, a special type of convolutional neural network.
 ### Convolutional Neural Network (CNN)
 ![CNN](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/d0e15eab-f15d-4470-81dd-e8a90c0bac92)
@@ -55,3 +57,10 @@ Autoencoder, or an "hourglass" model, is a simple extension of the previously me
 
 We will use this autoencoder architecture to build a model that can learn to produce a segmentation mask from the input image. Intuitively, we expect the output of the autoencoder to be the predicted segmentation mask. During training, the loss will be computed between the real label mask and the predicted mask.
 
+## Results
+
+## Evaluation
+
+## Contact
+
+## Acknowledgement
