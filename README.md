@@ -23,6 +23,8 @@ The goal of this project is to develop and showcase deep learning models and tec
 - ```Retina_Images_Processing.ipynb```: Juypyter Notebook containing all the code in preprocessing the retina images and building the model
 (HTML file: ```Retina_Images_Processing.html``` is also available)
 
+<p align="right">(<a href="#Overview">back to top</a>)</p>
+
 ### Dataset
 - ```retina_vessel_dataset.npz```: contains 610 raw retinal vessel images and labels in 2D (64x64)
   - **x_train**: 537 retinal vessel images for training, shape: (537, 64, 64)
@@ -49,11 +51,15 @@ Below are some training samples and labels:
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
 
+<p align="right">(<a href="#Overview">back to top</a>)</p>
+
 ## Model
  The model is autoencoder, a special type of convolutional neural network.
 ### Convolutional Neural Network (CNN)
 ![CNN](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/d0e15eab-f15d-4470-81dd-e8a90c0bac92)
 For the CNN image classification model, Image undergoes an "abstraction" path that reduces the spatial dimension of the input via pooling operations while increasing the number of channels with convolution layers along the path. The compressed feature resulting from the abstraction path subsequently gets flattened, from which a set of dense layers further manipulates the flattened features to yield the final classification prediction.
+
+<p align="right">(<a href="#Overview">back to top</a>)</p>
 
 ### Autoencoder
 ![Autoencoder](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/8dadee0a-2099-42bf-ad62-3bbe68f7d353)
@@ -61,11 +67,15 @@ Autoencoder, or an "hourglass" model, is a simple extension of the previously me
 
 We will use this autoencoder architecture to build a model that can learn to produce a segmentation mask from the input image. Intuitively, we expect the output of the autoencoder to be the predicted segmentation mask. During training, the loss will be computed between the real label mask and the predicted mask.
 
+<p align="right">(<a href="#Overview">back to top</a>)</p>
+
 ## Evaluation
 We will use a evaluation metric called the Dice coefficient, one the most dominantly used metrics for segmentation tasks.
 ![Dice_Coefficient](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/5ba0a5c5-a682-4a0d-abbc-e3feaeb14fad)
 
 The dice coefficient measures the similarity between two segmentation masks by comparing pixel-wise agreement. It is computed as twice the area of overlap divided by the sum of the areas of both masks. If two masks are identical, the Dice coefficient will give the highest value of 1, and if the two masks have no overlap at all, then it will give the lowest value of 0.
+
+<p align="right">(<a href="#Overview">back to top</a>)</p>
 
 ## Results
 ### Predicted Segmentation
@@ -76,7 +86,7 @@ Since the predicted segmentation is blurred, we need to add a thershold.
 
 At last, our model gives  0.7448 dice coefficient on the validation set.
 
-<p align="right">(<a href="## Table of Content">back to top</a>)</p>
+<p align="right">(<a href="#Overview">back to top</a>)</p>
 
 ## Contact
 
