@@ -30,6 +30,8 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **x_test**: 174 retinal vessel images for testing, shape: (174, 64, 64)
 Below are some training samples and labels:
 ![Retinal_vessel_Sample_Training](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/1c6c980b-6ba6-4f16-a004-15b7ab0a84f5)
+![Retinal_vessel_Sample_Training_2](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/4e17bdb6-7d00-438c-855c-3d66f7976a50)
+
 
   **y_test will not be available due to privacy issues** 
 
@@ -57,6 +59,18 @@ Autoencoder, or an "hourglass" model, is a simple extension of the previously me
 We will use this autoencoder architecture to build a model that can learn to produce a segmentation mask from the input image. Intuitively, we expect the output of the autoencoder to be the predicted segmentation mask. During training, the loss will be computed between the real label mask and the predicted mask.
 
 ## Results
+### Contrast Stretching
+Retinal images are low-contrast images. In other words, the intensities of the vessels do not stand out by a large margin compared to the background. As such, we will enhance the retinal images by stretching their contrast.
+
+We will use the following contrast stretching formula:
+
+$\mathcal{I}_{new}=\frac{\mathcal{I}-\mathcal{I}_{min}}{\mathcal{I}_{max}-\mathcal{I}_{min}}\times255$,
+where
+
+* $\mathcal{I}$ is the current pixel intensity value
+* $\mathcal{I}_{min}$ is the minimum intensity value present in the whole image
+* $\mathcal{I}_{max}$ is the maximum intensity value present in the whole image
+* $\mathcal{I}_{new}$ is the new output intensity value.
 
 ## Evaluation
 
