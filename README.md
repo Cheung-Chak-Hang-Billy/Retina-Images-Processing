@@ -38,7 +38,8 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **sample_pred_hard**: **sample_img** after passing the **expected (real)** thershold, shape: (64, 64)
   - **sample_raw**: Second retinal vessel image for testing, shape: (64, 64)
   - **sample_enhanced**: **sample_raw** after contrast stretching, shape: (64, 64)
- Below are some sample images:
+
+Below are some sample images:
 ![Retinal_Vessel_Samples](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/ac2b4531-c2c9-42ec-8a6c-8ca3605de841)
  
   **Remark**
