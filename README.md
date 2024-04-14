@@ -5,7 +5,7 @@
 ## Table of Content
 - [Overview](#Overview)
 - [Files](#Files)
-- - [Jupyter Notebook](#Jupyter Notebook)
+- - [Jupyter Notebook](#Jupyter_Notebook)
 - - [Dataset](#Dataset)
 - [Model](#Model)
 
@@ -17,7 +17,7 @@ Retina image processing involves the application of advanced computational techn
 The goal of this project is to develop and showcase deep learning models and techniques for retinal image segmentation processing. By leveraging state-of-the-art neural networks and image processing methodologies, we aim to enhance the accuracy and efficiency of diagnosing retinal diseases, such as diabetic retinopathy, age-related macular degeneration, and glaucoma.
 
 ## Files
-### Jupyter Notebook
+### Jupyter_Notebook
 - ```Retina_Images_Processing.ipynb```: Juypyter Notebook containing all the code in preprocessing the retina images and building the model
 (HTML file: ```Retina_Images_Processing.html``` is also available)
 
