@@ -64,7 +64,7 @@ Retinal images are low-contrast images. In other words, the intensities of the v
 
 We will use the following contrast stretching formula:
 
-$\mathcal{I}_{new}=\frac{\mathcal{I}-\mathcal{I}_{min}}{\mathcal{I}_{max}-\mathcal{I}_{min}}\times255$,
+$\mathcal{I}_{new}=\frac{\mathcal{I}-\mathcal{I}_{min}}{\mathcal{I}_{max}-\mathcal{I}_{min}}\times255$
 where
 
 * $\mathcal{I}$ is the current pixel intensity value
