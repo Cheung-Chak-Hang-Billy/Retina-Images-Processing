@@ -19,20 +19,20 @@ The goal of this project is to develop and showcase deep learning models and tec
 
 ### Dataset
 - ```retina_vessel_dataset.npz```: contains 610 raw retinal vessel images and labels in 2D (64x64)
-  - x_train: 537 retinal vessel images for training, shape: (537, 64, 64)
-  - x_val: 173 retinal vessel images for validation, shape: (173, 64, 64)
-  - y_train: 537 labels for the training data, shape: (537, 64, 64)
-  - y_val: 173 labels for the validation data, shape: (173, 64, 64)
-  - x_test: 174 retinal vessel images for testing, shape: (174, 64, 64)
+  - **x_train**: 537 retinal vessel images for training, shape: (537, 64, 64)
+  - **x_val**: 173 retinal vessel images for validation, shape: (173, 64, 64)
+  - **y_train**: 537 labels for the training data, shape: (537, 64, 64)
+  - **y_val**: 173 labels for the validation data, shape: (173, 64, 64)
+  - **x_test**: 174 retinal vessel images for testing, shape: (174, 64, 64)
   
   **y_test will not be available due to privacy issues** 
 
 - ```sample_data.npz```:
-  - sample_img: retinal vessel image for testing the dice coefficient, shape: (64, 64)
-  - sample_label: label for sample_img, shape: (64, 64)
-  - sample_pred_soft: 
-  - sample_pred_hard:
-  - sample_raw: 
-  - sample_enhanced:
+  - **sample_img**: retinal vessel image for testing the dice coefficient, shape: (64, 64)
+  - **sample_label**: **sample_img** after passing the thershold (all the pixel values are 1 or 0), shape: (64, 64)
+  - **sample_pred_soft**: 
+  - **sample_pred_hard**:
+  - **sample_raw**: 
+  - **sample_enhanced**:
   
   **Remarks: NPZ files is a compressed archive format used by NumPy to store arrays and other data.**
