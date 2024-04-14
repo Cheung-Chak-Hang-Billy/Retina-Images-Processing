@@ -3,7 +3,9 @@
 ![Retinal_Images](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/9c53d40e-9f4e-41b7-b4fe-422d1d724f10)
 
 ## Table of Content
-- [Overview](#Overview)
+- [Overview](##Overview)
+- [Files](##Files)
+- [Model](##Model)
 
 ## Overview
 This project focuses on the field of retina image processing, a crucial area in medical imaging and computer vision. The human retina plays a vital role in visual perception, and analyzing retinal images can provide valuable insights into various ocular diseases and conditions.
@@ -39,7 +41,8 @@ The goal of this project is to develop and showcase deep learning models and tec
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
 
- ## Models: Autoencoder (Special Type of Convolutional Neural Network)
+ ## Model
+ The model is autoencoder, a special type of convolutional neural network.
 ### Convolutional Neural Network (CNN)
 ![CNN](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/d0e15eab-f15d-4470-81dd-e8a90c0bac92)
 For the CNN image classification model, Image undergoes an "abstraction" path that reduces the spatial dimension of the input via pooling operations while increasing the number of channels with convolution layers along the path. The compressed feature resulting from the abstraction path subsequently gets flattened, from which a set of dense layers further manipulates the flattened features to yield the final classification prediction.
