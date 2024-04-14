@@ -44,6 +44,7 @@ Below are some training samples and labels:
   - **sample_pred_hard**: **sample_img** after passing the **expected (real)** thershold, shape: (64, 64)
   - **sample_raw**: Second retinal vessel image for testing, shape: (64, 64)
   - **sample_enhanced**: **sample_raw** after contrast stretching, shape: (64, 64)
+  
   **Remark**
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
@@ -74,6 +75,8 @@ Since the predicted segmentation is blurred, we need to add a thershold.
 ![Results_After_Thershold](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/5de345d5-f7be-4ebb-a6d9-2de545063419)
 
 At last, our model gives  0.7448 dice coefficient on the validation set.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## Contact
 
 ## Acknowledgement
