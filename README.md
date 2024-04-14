@@ -76,7 +76,7 @@ Since the predicted segmentation is blurred, we need to add a thershold.
 
 At last, our model gives  0.7448 dice coefficient on the validation set.
 
-<p align="right">(<a href="#Overview">back to top</a>)</p>
+<p align="right">(<a href="#Table of Content">back to top</a>)</p>
 
 ## Contact
 
