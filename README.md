@@ -63,6 +63,7 @@ We will use this autoencoder architecture to build a model that can learn to pro
 ## Evaluation
 We will use a evaluation metric called the Dice coefficient, one the most dominantly used metrics for segmentation tasks.
 ![Dice_Coefficient](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/5ba0a5c5-a682-4a0d-abbc-e3feaeb14fad)
+
 The dice coefficient measures the similarity between two segmentation masks by comparing pixel-wise agreement. It is computed as twice the area of overlap divided by the sum of the areas of both masks. If two masks are identical, the Dice coefficient will give the highest value of 1, and if the two masks have no overlap at all, then it will give the lowest value of 0.
 
 ## Results
