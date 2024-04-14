@@ -8,6 +8,8 @@
 - - [Jupyter Notebook](#Jupyter_Notebook)
 - - [Dataset](#Dataset)
 - [Model](#Model)
+- [Evaluation](#Evaluation)
+- [Results](#Results)
 
 ## Overview
 This project focuses on the field of retina image processing, a crucial area in medical imaging and computer vision. The human retina plays a vital role in visual perception, and analyzing retinal images can provide valuable insights into various ocular diseases and conditions.
@@ -58,22 +60,19 @@ Autoencoder, or an "hourglass" model, is a simple extension of the previously me
 
 We will use this autoencoder architecture to build a model that can learn to produce a segmentation mask from the input image. Intuitively, we expect the output of the autoencoder to be the predicted segmentation mask. During training, the loss will be computed between the real label mask and the predicted mask.
 
-## Results
-### Contrast Stretching
-Retinal images are low-contrast images. In other words, the intensities of the vessels do not stand out by a large margin compared to the background. As such, we will enhance the retinal images by stretching their contrast.
-
-We will use the following contrast stretching formula:
-
-\[ \mathcal{I}_{\text{new}} = \frac{\mathcal{I}-\mathcal{I}_{\text{min}}}{\mathcal{I}_{\text{max}}-\mathcal{I}_{\text{min}}} \times 255 \]
-where
-
-* $\mathcal{I}$ is the current pixel intensity value
-* $\mathcal{I}_{min}$ is the minimum intensity value present in the whole image
-* $\mathcal{I}_{max}$ is the maximum intensity value present in the whole image
-* $\mathcal{I}_{new}$ is the new output intensity value.
-
 ## Evaluation
+We will use a evaluation metric called the Dice coefficient, one the most dominantly used metrics for segmentation tasks.
+![Dice_Coefficient](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/5ba0a5c5-a682-4a0d-abbc-e3feaeb14fad)
+The dice coefficient measures the similarity between two segmentation masks by comparing pixel-wise agreement. It is computed as twice the area of overlap divided by the sum of the areas of both masks. If two masks are identical, the Dice coefficient will give the highest value of 1, and if the two masks have no overlap at all, then it will give the lowest value of 0.
 
+## Results
+### Predicted Segmentation
+![Results_Before_Thershold](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/e6e335fa-6d2a-451f-925e-324ecf77093a)
+
+Since the predicted segmentation is blurred, we need to add a thershold.
+![Results_After_Thershold](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/5de345d5-f7be-4ebb-a6d9-2de545063419)
+
+At last, our model gives  0.7448 dice coefficient on the validation set.
 ## Contact
 
 ## Acknowledgement
