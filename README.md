@@ -27,7 +27,7 @@ The goal of this project is to develop and showcase deep learning models and tec
   
   **y_test will not be available due to privacy issues** 
 
-- ```sample_data.npz```:
+- ```sample_data.npz```: contains 2 retinal vessel images for visualizing and testing
   - **sample_img**: First retinal vessel image for testing, shape: (64, 64)
   - **sample_label**: **sample_img** after passing the **ideal** thershold, shape: (64, 64)
   - **sample_pred_soft**: blurred **sample_img**, shape: (64, 64)
@@ -38,3 +38,15 @@ The goal of this project is to develop and showcase deep learning models and tec
   **Remark**
   - NPZ files is a compressed archive format used by NumPy to store arrays and other data.
   -  After passing the thershold, all the pixel values are 1 or 0
+
+ ## Models: Autoencoder (Special Type of Convolutional Neural Network)
+### Convolutional Neural Network (CNN)
+![CNN](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/d0e15eab-f15d-4470-81dd-e8a90c0bac92)
+For the CNN image classification model, Image undergoes an "abstraction" path that reduces the spatial dimension of the input via pooling operations while increasing the number of channels with convolution layers along the path. The compressed feature resulting from the abstraction path subsequently gets flattened, from which a set of dense layers further manipulates the flattened features to yield the final classification prediction.
+
+### Autoencoder
+![Autoencoder](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/8dadee0a-2099-42bf-ad62-3bbe68f7d353)
+Autoencoder, or an "hourglass" model, is a simple extension of the previously mentioned image classification model. The process of obtaining the compressed feature shares the same concept of abstraction path introduced in the classification model. The compressed feature is then propagated to the expansion path, which de-compresses the compressed feature back to the spatial representation of the image. In this arrangement, the compressed feature is often called the "Bottleneck" feature.
+
+We will use this autoencoder architecture to build a model that can learn to produce a segmentation mask from the input image. Intuitively, we expect the output of the autoencoder to be the predicted segmentation mask. During training, the loss will be computed between the real label mask and the predicted mask.
+
