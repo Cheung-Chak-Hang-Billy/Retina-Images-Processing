@@ -3,9 +3,9 @@
 ![Retinal_Images](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/9c53d40e-9f4e-41b7-b4fe-422d1d724f10)
 
 ## Table of Content
-- [Overview](##Overview)
-- [Files](##Files)
-- [Model](##Model)
+- [Overview](#Overview)
+- [Files](#Files)
+- [Model](#Model)
 
 ## Overview
 This project focuses on the field of retina image processing, a crucial area in medical imaging and computer vision. The human retina plays a vital role in visual perception, and analyzing retinal images can provide valuable insights into various ocular diseases and conditions.
