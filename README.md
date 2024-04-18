@@ -32,7 +32,6 @@ The goal of this project is to develop and showcase deep learning models and tec
   - **y_train**: 537 labels for the training data, shape: (537, 64, 64)
   - **y_val**: 173 labels for the validation data, shape: (173, 64, 64)
   - **x_test**: 174 retinal vessel images for testing, shape: (174, 64, 64)
-
 Below are some training samples/labels:
 ![Retinal_vessel_Sample_Training](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/1c6c980b-6ba6-4f16-a004-15b7ab0a84f5)
 ![Retinal_vessel_Sample_Training_2](https://github.com/Cheung-Chak-Hang-Billy/Retina-Images-Processing/assets/148378750/4e17bdb6-7d00-438c-855c-3d66f7976a50)
